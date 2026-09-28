@@ -38,7 +38,7 @@ passport.use(
 passport.use(new GithubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: 'https://passport-local-strategy-plus-github.onrender.com//auth/github/callback'
+    callbackURL: 'https://passport-local-strategy-plus-github.onrender.com/auth/github/callback'
 },
 (accessToken, refreshToken, profile, done) => {
     let user = users.find(user => user.githubId === profile.id);

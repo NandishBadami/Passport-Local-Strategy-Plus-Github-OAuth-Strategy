@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <% if(error) { %>
+        <p style="color: red;"><%= error.pop() %></p>
+    <% } %>
+    <form method="post">
+        Username:
+        <input type="text" name="username">
+        Password:
+        <input type="text" name="password">
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <p>OR</p>
+    <a href="/auth/github"><button>Login With Github</button></a>
+    <p>New? <a href="/register">Register Here.</a></p>
+</body>
+</html>

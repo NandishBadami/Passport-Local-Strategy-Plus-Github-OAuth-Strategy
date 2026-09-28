@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <p style="color: red;"><%= locals.error %></p>
+    <form method="post">
+        Username:
+        <input type="text" name="username">
+        Password:
+        <input type="password" name="password">
+        <button type="submit">Register</button>
+    </form>
+
+    <br>
+    <p>OR</p>
+    <a href="/auth/github"><button>Register Using Github</button></a>
+
+    <p>Already Registered? Login <a href="/login">here</a>.</p>
+</body>
+</html>

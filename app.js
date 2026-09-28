@@ -3,6 +3,7 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const GithubStrategy = require('passport-github2').Strategy;
+require('dotenv').config();
 
 const app = express();
 
